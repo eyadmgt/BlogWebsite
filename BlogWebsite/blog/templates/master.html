@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %}Blog{% endblock %}</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Blog!</h1>
+        <nav>
+            <a href="/">Home</a>
+            <p></p>
+            <a href="/posts">Blogs</a>
+            <p></p>
+            <a href="/users">Users</a>
+            <p></p>
+            <a href="/categories">Categories</a>
+            <p></p>
+            <a href="/comments">Comments</a>
+        </nav>
+    </header>
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+    <footer>
+        <p>Blog © 2024</p>
+    </footer>
+</body>
+</html>
